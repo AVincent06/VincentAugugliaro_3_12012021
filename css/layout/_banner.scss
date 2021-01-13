@@ -1,0 +1,14 @@
+.banner {
+    align-items: center;
+    background-color: $color-banner;
+    display: flex;          
+    flex-direction: column; 
+    height: 50px;
+    justify-content: center;
+    &__town {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 1em;
+    }
+}
