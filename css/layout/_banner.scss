@@ -1,6 +1,7 @@
 .banner {
     align-items: center;
-    background-color: $color-banner;
+    background: $color-banner;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.384) -10%, $color-banner 10%); // here lies 2 hours of research and trial and error.
     display: flex;          
     flex-direction: column; 
     height: 50px;

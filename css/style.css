@@ -15,18 +15,52 @@ body {
   margin: 0;
 }
 
-/* Les polices */
 body {
-  font-family: "Shrikhand", cursive;
   font-family: "Roboto", sans-serif;
 }
 
-/* Les boutons */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0em;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.2em;
+  margin-bottom: 29px;
+}
+h1 span {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-top: 12px;
+}
+
+.presentation__button {
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
+  border: 0px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  height: 50px;
+  padding: 0em 1.5em 0em 1.5em;
+}
+
 .banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eaeaea;
+  background: #eaeaea;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, rgba(0, 0, 0, 0.384)), color-stop(10%, #eaeaea));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.384) -10%, #eaeaea 10%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +78,12 @@ body {
   font-size: 1em;
   font-weight: 500;
   margin-left: 1em;
+}
+
+/* les conteneurs */
+/* les formulaires */
+.functioning {
+  height: 440px;
 }
 
 header {
@@ -64,8 +104,13 @@ header {
 }
 
 /* Le nav */
-/* les conteneurs */
-/* les formulaires */
+.presentation {
+  background-color: #f6f6f6;
+  height: 248px;
+  padding: 39px 43px 0px 43px;
+  text-align: center;
+}
+
 /* exemple de page */
 /* exemple de page */
 /* exemple de page */
