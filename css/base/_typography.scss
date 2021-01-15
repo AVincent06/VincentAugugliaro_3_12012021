@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {    // removal of style for purely semantic use
+h3, h4, h5, h6 {    // removal of style for purely semantic use
     margin: 0em;
 	font-size: 1em;
 	font-weight: normal;
@@ -15,12 +15,27 @@ h1 {
     font-size: 1.5em;
     font-weight: 800;
     line-height: 1.2em;
-    margin-bottom: 29px;
+    margin: 0px 0px 29px 0px;
     & span {
         display: inline-block;
         font-size: 0.7em;
         font-weight: 300;
         line-height: 1.2em;
         margin-top: 12px;
+    }
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0em;
+}
+
+.logo {
+    color: $color-logo;
+    font-family: 'Shrikhand', cursive;
+    font-size: 2em;
+    & p {
+        margin: 0px;
     }
 }
