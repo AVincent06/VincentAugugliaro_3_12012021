@@ -18,7 +18,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   margin: 0em;
   font-size: 1em;
   font-weight: normal;
@@ -41,6 +41,12 @@ h1 span {
 h2 {
   font-size: 1.5em;
   font-weight: 800;
+  margin: 0em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 700;
   margin: 0em;
 }
 
@@ -110,17 +116,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   left: -12px;
   position: absolute;
   top: 24px;
-  width: 59px;
-}
-.functioning__icons i {
-  color: #7e7e7e;
-  font-size: 1.3em;
 }
 .functioning__number {
   display: -webkit-box;
@@ -137,6 +135,7 @@ h2 {
   color: white;
   font-size: 0.9em;
   height: 24px;
+  margin-right: 22px;
   width: 24px;
 }
 .functioning__step {
@@ -158,13 +157,18 @@ h2 {
   position: relative;
 }
 .functioning__step--coloured {
-  background-color: white;
+  background-color: #f5edff;
 }
 .functioning__step h3 {
   font-size: 1em;
   font-weight: 500;
   margin: 0px;
   position: relative;
+}
+
+/* temporaire */
+.coloured {
+  background-color: #f5edff;
 }
 
 header {
@@ -190,6 +194,62 @@ header {
   height: 248px;
   padding: 39px 43px 0px 43px;
   text-align: center;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  height: 1226px;
+  padding: 53px 20px 0px 20px;
+}
+.restaurants h2 {
+  margin-bottom: 27px;
+}
+.restaurants__card {
+  border-radius: 15px 15px 15px 15px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 18px;
+}
+.restaurants__photo {
+  border-radius: 15px 15px 0px 0px;
+  height: 174px;
+  overflow: hidden;
+  width: 335px;
+}
+.restaurants__photo img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.restaurants__name {
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 61px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0px 0px 13px;
+}
+.restaurants__name p {
+  font-size: 1.05em;
+  margin: 4px 0px 0px 0px;
+}
+
+.my-heart {
+  height: 21px;
+  margin: 6px 25px 0px 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 22px;
+}
+.my-heart:hover {
+  stroke-width: 0px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 /* exemple de page */
