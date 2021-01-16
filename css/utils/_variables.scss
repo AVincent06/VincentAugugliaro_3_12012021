@@ -13,5 +13,8 @@ $color-button: white;
 $color-functioning : white;
 $color-functioning-number : white;
 $color-functioning-step : $color-presentation;
-$color-functioning-step-coloured : lighten($colour-primary,94.8%);
+$color-functioning-step-coloured : #f5edff; //lighten($colour-primary,94.8%);
 $color-functioning-icon : #7e7e7e;
+
+$color-restaurants : $color-presentation;
+$color-restaurants-name : white;

@@ -8,15 +8,9 @@
     &__icons {
         align-items: center;
         display: flex;
-        justify-content: space-between;
         left: -12px;
         position: absolute;
         top: 24px;
-        width: 59px;
-        & i {
-            color: $color-functioning-icon;
-            font-size: 1.3em;        
-        }
     }
     &__number {
         @include center;
@@ -25,6 +19,7 @@
         color: $color-functioning-number;
         font-size: 0.9em;
         height: 24px;
+        margin-right: 22px;
         width: 24px;
     }
     &__step {
@@ -45,4 +40,9 @@
             position: relative;
         }    
     }
+}
+
+/* temporaire */
+.coloured {
+    background-color: $color-functioning-step-coloured;
 }
