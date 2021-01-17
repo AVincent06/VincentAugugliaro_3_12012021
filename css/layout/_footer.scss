@@ -20,4 +20,12 @@ footer {
     & img {
         margin: 2px 11px 0px 0px;
     }
+    & a {
+        color: $color-footer-font;
+        cursor: pointer;
+        text-decoration:none;
+        &:visited {
+            color: $color-footer-font;
+        }
+    }
 }

@@ -1,7 +1,12 @@
 header {
     align-items: center;
     display: flex;          
-    flex-direction: column; 
     height: 63px;
     justify-content: center;
+    position: relative;
+    & a {
+        display: block;
+        left: 6%;
+        position: absolute;
+    }
 }
