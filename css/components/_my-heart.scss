@@ -1,0 +1,10 @@
+.my-heart {
+    height: 21px;
+    margin: 6px 25px 0px 0px;
+    transition: all 1s;
+    width: 22px;
+    &:hover {
+        stroke-width: 0px;
+        transform: scale(2);
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    background-color: $color-footer;
+    color: $color-footer-font;
+    height: 172px;
+    padding: 25px 0px 0px 25px;
+    & h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    & h3 {
+        font-size: 1em;
+        font-weight: 400;
+        margin-bottom: 7px;
+    }
+    & div {
+        display: flex;
+    }
+    & img {
+        margin: 2px 11px 0px 0px;
+    }
+}

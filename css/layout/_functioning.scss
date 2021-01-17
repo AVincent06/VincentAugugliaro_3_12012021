@@ -8,9 +8,11 @@
     &__icons {
         align-items: center;
         display: flex;
+        justify-content: space-between;
         left: -12px;
         position: absolute;
         top: 24px;
+        width: 20%;
     }
     &__number {
         @include center;
@@ -19,7 +21,6 @@
         color: $color-functioning-number;
         font-size: 0.9em;
         height: 24px;
-        margin-right: 22px;
         width: 24px;
     }
     &__step {
