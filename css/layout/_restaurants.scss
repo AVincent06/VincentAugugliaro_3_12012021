@@ -14,7 +14,7 @@
         border-radius: 15px 15px 0px 0px;
         height:174px;
         overflow: hidden;
-        width:335px;
+        width:auto;
         & img {
             height: 100%;
             object-fit: cover;
@@ -32,16 +32,5 @@
             font-size: 1.05em;
             margin: 4px 0px 0px 0px;
         }
-    }
-}
-
-.my-heart {
-    height: 21px;
-    margin: 6px 25px 0px 0px;
-    transition: all 1s;
-    width: 22px;
-    &:hover {
-        stroke-width: 0px;
-        transform: scale(2);
     }
 }
