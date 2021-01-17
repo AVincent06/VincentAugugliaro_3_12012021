@@ -113,6 +113,11 @@ h3 {
 }
 
 /* les conteneurs */
+.cover img {
+  height: 258px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 footer {
   background-color: #353535;
   color: white;
@@ -137,6 +142,14 @@ footer div {
 }
 footer img {
   margin: 2px 11px 0px 0px;
+}
+footer a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
 }
 
 /* les formulaires */
@@ -220,14 +233,16 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 63px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+header a {
+  display: block;
+  left: 6%;
+  position: absolute;
 }
 
 /* Le nav */
@@ -251,6 +266,9 @@ header {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 18px;
+}
+.restaurants__card:hover {
+  cursor: pointer;
 }
 .restaurants__photo {
   border-radius: 15px 15px 0px 0px;
