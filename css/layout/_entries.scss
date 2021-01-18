@@ -1,0 +1,44 @@
+.entries {
+    background-color: $color-presentation;
+    padding: 0px 14px 0px 14px;
+    position: relative;
+    top: -8px;
+    & h2 {
+        font-size: 1em;
+        font-weight: 400;
+        margin: 0px 0px 5px 6px;
+    }
+    &__underline {
+        background-color: $colour-tertiary;
+        height: 3px;
+        margin: 0px 0px 14px 6px;
+        width: 40px;
+    }
+    &__card {
+        background-color: $color-background;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display:flex;
+        height: 56px;
+        justify-content: space-between;
+        padding: 12px 0px 0px 11px;
+        & h3 {
+            font-size: 1.125em;
+            margin-bottom: 4px;
+        }
+        & p{
+            font-size: 0.875em;
+            font-weight: 400;
+            margin: 0px;
+        }
+    }
+    &__price {
+        align-items: flex-end;
+        display: flex;
+        & p {
+            font-size: 1em;
+            font-weight: 600;
+            margin: 0px 22px 11px 0px;
+        }
+    }
+}

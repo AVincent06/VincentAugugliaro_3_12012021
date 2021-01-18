@@ -53,7 +53,7 @@ h3 {
 .logo {
   color: black;
   font-family: "Shrikhand", cursive;
-  font-size: 2em;
+  font-size: 1.9em;
 }
 .logo p {
   margin: 0px;
@@ -113,11 +113,97 @@ h3 {
 }
 
 /* les conteneurs */
-.cover img {
+.cover__photo {
   height: 258px;
+  overflow: hidden;
+  width: auto;
+}
+.cover__photo img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
+.cover__title {
+  background-color: #f6f6f6;
+  border-radius: 38px 38px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 35px 0px 0px 0px;
+  position: relative;
+  top: -42px;
+}
+.cover__title h1 {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75em;
+  font-weight: 400;
+  margin: 0;
+}
+.cover__title h1 p {
+  margin: 0;
+}
+.cover__title .my-heart {
+  margin: 6px 0px 0px 0px;
+}
+
+.entries {
+  background-color: #f6f6f6;
+  padding: 0px 14px 0px 14px;
+  position: relative;
+  top: -8px;
+}
+.entries h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0px 0px 5px 6px;
+}
+.entries__underline {
+  background-color: #99e2d0;
+  height: 3px;
+  margin: 0px 0px 14px 6px;
+  width: 40px;
+}
+.entries__card {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0px 0px 11px;
+}
+.entries__card h3 {
+  font-size: 1.125em;
+  margin-bottom: 4px;
+}
+.entries__card p {
+  font-size: 0.875em;
+  font-weight: 400;
+  margin: 0px;
+}
+.entries__price {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.entries__price p {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0px 22px 11px 0px;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -230,6 +316,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,8 +386,9 @@ header a {
   margin: 4px 0px 0px 0px;
 }
 
-/* exemple de page */
-/* exemple de page */
-/* exemple de page */
+.body-menu {
+  background-color: #f6f6f6;
+}
+
 /* @import "./themes/"; */
 /*# sourceMappingURL=style.css.map */
