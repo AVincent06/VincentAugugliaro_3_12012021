@@ -19,26 +19,42 @@
         border-radius: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display:flex;
-        height: 56px;
-        justify-content: space-between;
-        padding: 12px 0px 0px 11px;
+        height: 68px;
+        //justify-content: space-between;
+        padding-left: 11px;
+    }
+    &__text {
+        margin-top: 12px;
+        width: 250px;
         & h3 {
             font-size: 1.125em;
             margin-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         & p{
             font-size: 0.875em;
             font-weight: 400;
             margin: 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
+
     }
     &__price {
         align-items: flex-end;
         display: flex;
+        justify-content: center;
         & p {
             font-size: 1em;
             font-weight: 600;
-            margin: 0px 22px 11px 0px;
+            margin: 0px 0px 11px 0px;
         }
+    }
+    &__ckeck {
+        background-color: $colour-tertiary;
+        width: 59px;
     }
 }

@@ -175,20 +175,27 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 56px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 12px 0px 0px 11px;
+  height: 68px;
+  padding-left: 11px;
 }
-.entries__card h3 {
+.entries__text {
+  margin-top: 12px;
+  width: 250px;
+}
+.entries__text h3 {
   font-size: 1.125em;
   margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.entries__card p {
+.entries__text p {
   font-size: 0.875em;
   font-weight: 400;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .entries__price {
   -webkit-box-align: end;
@@ -197,11 +204,18 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .entries__price p {
   font-size: 1em;
   font-weight: 600;
-  margin: 0px 22px 11px 0px;
+  margin: 0px 0px 11px 0px;
+}
+.entries__ckeck {
+  background-color: #99e2d0;
+  width: 59px;
 }
 
 footer {
