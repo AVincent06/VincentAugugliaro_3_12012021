@@ -3,3 +3,17 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin button {
+    background: $colour-primary;
+    background: linear-gradient(353deg,$colour-primary 0%, $colour-secondary 80%);
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: $color-button;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    height: 50px;
+    padding: 0em 1.5em 0em 1.5em;
+}
