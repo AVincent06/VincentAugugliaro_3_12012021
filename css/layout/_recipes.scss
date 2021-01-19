@@ -1,5 +1,6 @@
-.entries {
+.recipes {
     background-color: $color-presentation;
+    margin-bottom: 34px;
     padding: 0px 14px 0px 14px;
     position: relative;
     top: -8px;
@@ -14,18 +15,34 @@
         margin: 0px 0px 14px 6px;
         width: 40px;
     }
+    
     &__card {
         background-color: $color-background;
         border-radius: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display:flex;
         height: 68px;
-        //justify-content: space-between;
+        margin-bottom: 14px;
+        overflow: hidden;
+        position: relative;
         padding-left: 11px;
+        &:hover > {
+            .recipes__check {
+                transform: translateX(-59px);
+            }
+            .recipes__check img {
+                transform: rotate(360deg);
+            }
+            .recipes__text {
+                width: 65%;
+            }
+        }
     }
     &__text {
         margin-top: 12px;
-        width: 250px;
+        width: 75%;
+        transition: transform 1s;
+        transition-timing-function: ease-out;
         & h3 {
             font-size: 1.125em;
             margin-bottom: 4px;
@@ -47,14 +64,23 @@
         align-items: flex-end;
         display: flex;
         justify-content: center;
+        width: 17%;
         & p {
             font-size: 1em;
             font-weight: 600;
             margin: 0px 0px 11px 0px;
         }
     }
-    &__ckeck {
+    &__check {
+        @include center;
         background-color: $colour-tertiary;
+        height: 100%;
+        position: absolute;
+        left: 100%;
         width: 59px;
+        transition: transform 400ms;
+        img {
+            transition: transform 400ms;
+        }
     }
 }
