@@ -11,16 +11,17 @@ $color-logo: black;
 $color-banner: #eaeaea;
 
 $color-presentation: $color-background-menu;
-$color-button:$color-background;
+$color-button: $color-background;
 
-$color-functioning :$color-background;
-$color-functioning-number : $color-background;
-$color-functioning-step : $color-background-menu;
-$color-functioning-step-coloured : #f5edff; //lighten($colour-primary,94.8%);
-$color-functioning-icon : #7e7e7e;
+$color-functioning: $color-background;
+$color-functioning-number: $color-background;
+$color-functioning-step: $color-background-menu;
+$color-functioning-step-coloured: #f5edff; //lighten($colour-primary,94.8%);
+$color-functioning-icon: #7e7e7e;
 
-$color-restaurants : $color-background-menu;
-$color-restaurants-name : $color-background;
+$color-restaurants: $color-background-menu;
+$color-restaurants-name: $color-background;
+$color-restaurants-new: darken($colour-tertiary, 36%);
 
-$color-footer : #353535;
+$color-footer: #353535;
 $color-footer-font: $color-background;
