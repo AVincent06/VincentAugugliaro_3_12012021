@@ -41,8 +41,7 @@
     &__text {
         margin-top: 12px;
         width: 75%;
-        transition: transform 1s;
-        transition-timing-function: ease-out;
+        transition: width 350ms 50ms ease-out;
         & h3 {
             font-size: 1.125em;
             margin-bottom: 4px;
@@ -78,9 +77,9 @@
         position: absolute;
         left: 100%;
         width: 59px;
-        transition: transform 400ms;
+        transition: transform 400ms ease-out;
         img {
-            transition: transform 400ms;
+            transition: transform 400ms ease-out;
         }
     }
 }
