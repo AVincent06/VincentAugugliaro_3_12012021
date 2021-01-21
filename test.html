@@ -25,12 +25,27 @@
     }*/
 </style>
 <body style="display: flex;align-items: center;justify-content: center;height: 100vh;">
-    <div class="my-heart">
+    <!--<div class="my-heart">
         <div class="my-heart__stepone">
             <img src="./images/my-heart-outline2.svg" alt="" width="22">
         </div>
         <div class="my-heart__steptwo">
             <img src="./images/my-heart-solid.svg" alt="" width="22">
         </div>
+    </div>-->
+    <style>
+        .colorheart {
+            background-color: #9356dc;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-image: linear-gradient(180deg,#9356dc 0%, #ff79da 80%);
+            background-size: 100%;
+            font-size: 22px;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    </style>
+    <div>
+        <i class="fas fa-heart colorheart"></i> <span class="colorheart">TEST</span>
     </div>
 </body>
