@@ -60,34 +60,76 @@ h3 {
 }
 
 .presentation__button {
-  background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
   border: 0px;
   border-radius: 25px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 400;
   height: 50px;
   padding: 0em 1.5em 0em 1.5em;
+  position: relative;
+  z-index: 1;
+}
+.presentation__button:hover::after {
+  opacity: 1;
+}
+.presentation__button::after {
+  background: linear-gradient(353deg, #9e67e0 0%, #ff8de0 80%);
+  border-radius: 25px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  bottom: 0;
+  content: "";
+  opacity: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  z-index: -1;
 }
 
 .order__button {
-  background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
   border: 0px;
   border-radius: 25px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 400;
   height: 50px;
   padding: 0em 1.5em 0em 1.5em;
+  position: relative;
+  z-index: 1;
   width: 186px;
+}
+.order__button:hover::after {
+  opacity: 1;
+}
+.order__button::after {
+  background: linear-gradient(353deg, #9e67e0 0%, #ff8de0 80%);
+  border-radius: 25px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  bottom: 0;
+  content: "";
+  opacity: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+  z-index: -1;
 }
 
 .my-heart {
@@ -98,11 +140,29 @@ h3 {
   width: 22px;
 }
 .my-heart:hover {
-  stroke-width: 0px;
   -webkit-transform: scale(2);
           transform: scale(2);
 }
 
+/*.my-heart {
+    margin: 6px 25px 0px 0px;
+    position: relative;
+    &__stepone {
+        position: absolute;
+        z-index: 3;
+        &:hover + .my-heart__steptwo {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &__steptwo {
+        opacity: 0;
+        transform: scale(0);
+        position: absolute;
+        transition: all 400ms ease-in-out;
+        z-index: 2;
+    }
+}*/
 .banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -327,6 +387,7 @@ header a {
   border-radius: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,11 +485,9 @@ header a {
   border-radius: 15px 15px 15px 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
   margin-bottom: 18px;
   position: relative;
-}
-.restaurants__card:hover {
-  cursor: pointer;
 }
 .restaurants__photo {
   border-radius: 15px 15px 0px 0px;

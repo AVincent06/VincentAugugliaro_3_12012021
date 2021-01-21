@@ -5,15 +5,36 @@
 }
 
 @mixin button {
-    background: $colour-primary;
     background: linear-gradient(353deg,$colour-primary 0%, $colour-secondary 80%);
     border: 0px;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: $color-button;
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 400;
     height: 50px;
     padding: 0em 1.5em 0em 1.5em;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        background: linear-gradient(353deg,lighten($colour-primary,4) 0%, lighten($colour-secondary,4) 80%);
+        border-radius: 25px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+        bottom: 0;
+        content: "";
+        opacity: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 250ms;
+        z-index: -1;
+    }
 }
