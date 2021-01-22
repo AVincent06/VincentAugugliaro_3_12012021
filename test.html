@@ -43,9 +43,35 @@
             font-size: 22px;
             -webkit-text-fill-color: transparent; 
             -moz-text-fill-color: transparent;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            z-index: 1;
+            transform: scale(0);
+            opacity:0;
+            transition: all 400ms ease-in-out;
+        }
+        .outlineheart {
+            font-size: 22px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            z-index: 0;
+            transition: all 50ms 350ms;
+        }
+        .hearttrigger{
+            position: relative;
+        }
+        .hearttrigger:hover>.colorheart{
+            opacity: 1;
+            transform: scale(1);
+        }
+        .hearttrigger:hover>.outlineheart{
+            opacity: 0;
         }
     </style>
-    <div>
-        <i class="fas fa-heart colorheart"></i> <span class="colorheart">TEST</span>
+    <div class="hearttrigger">
+        <i class="fas fa-heart colorheart"></i> <!--<span class="colorheart">TEST</span>-->
+        <i class="far fa-heart outlineheart"></i>
     </div>
 </body>
