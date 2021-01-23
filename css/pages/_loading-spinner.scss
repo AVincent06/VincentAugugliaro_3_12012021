@@ -1,0 +1,61 @@
+.loader {
+    animation: hide-me 400ms 3s both;
+    position : fixed;
+    z-index: 9999;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+    overflow: hidden;
+    background-color: white;
+    opacity: 1;
+    }
+
+.loading-spinner {
+    align-items: center;
+    cursor:wait;
+    display:flex;
+    filter: drop-shadow(5px -10px 6px #525252);
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+
+    &__beatingheart {
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-name: pace;
+        animation-timing-function: linear;
+        position: absolute;
+        width: 100px;
+        z-index: 2;
+    }
+    
+    &__circle {
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-name: revolution;
+        animation-timing-function: linear;
+        position:absolute;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+@keyframes hide-me {
+    0%   { opacity: 1;z-index: 9999; }
+    100% { opacity: 0;z-index: -1; }
+}
+
+@keyframes revolution {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pace {
+    0%   { transform: scale(1);  }
+    25%  { transform: scale(1.1);}
+    40%  { transform: scale(1);  }
+    60%  { transform: scale(1.1);}
+    100% { transform: scale(1);  }
+}
