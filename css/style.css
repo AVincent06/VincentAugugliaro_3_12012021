@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* Les variables */
+/* Colors */
+/* Timing */
 /* Les fonctions */
 /* à effacer */
 /* @import "./vendors/"; */
@@ -486,6 +487,105 @@ header a {
   transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
 }
 
+.recipes-fadein-0 {
+  -webkit-animation: show-me 800ms 0ms both;
+          animation: show-me 800ms 0ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-1 {
+  -webkit-animation: show-me 800ms 250ms both;
+          animation: show-me 800ms 250ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-2 {
+  -webkit-animation: show-me 800ms 500ms both;
+          animation: show-me 800ms 500ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-3 {
+  -webkit-animation: show-me 800ms 750ms both;
+          animation: show-me 800ms 750ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-4 {
+  -webkit-animation: show-me 800ms 1000ms both;
+          animation: show-me 800ms 1000ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-5 {
+  -webkit-animation: show-me 800ms 1250ms both;
+          animation: show-me 800ms 1250ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-6 {
+  -webkit-animation: show-me 800ms 1500ms both;
+          animation: show-me 800ms 1500ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-7 {
+  -webkit-animation: show-me 800ms 1750ms both;
+          animation: show-me 800ms 1750ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-8 {
+  -webkit-animation: show-me 800ms 2000ms both;
+          animation: show-me 800ms 2000ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.recipes-fadein-9 {
+  -webkit-animation: show-me 800ms 2250ms both;
+          animation: show-me 800ms 2250ms both;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+@-webkit-keyframes show-me {
+  50%, 100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes show-me {
+  50%, 100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 .restaurants {
   background-color: #f6f6f6;
   height: 1226px;
@@ -554,8 +654,8 @@ header a {
 }
 
 .loader {
-  -webkit-animation: hide-me 400ms 3s both;
-          animation: hide-me 400ms 3s both;
+  -webkit-animation: hide-me 400ms 2s both;
+          animation: hide-me 400ms 2s both;
   position: fixed;
   z-index: 9999;
   top: 0px;

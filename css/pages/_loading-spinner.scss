@@ -1,5 +1,5 @@
 .loader {
-    animation: hide-me 400ms 3s both;
+    animation: hide-me 400ms $delay-spinner both;
     position : fixed;
     z-index: 9999;
     top : 0px;
