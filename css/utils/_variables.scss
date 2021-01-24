@@ -1,4 +1,4 @@
-/* Les variables */
+/* Colors */
 
 $colour-primary: #9356dc;
 $colour-secondary: #ff79da;
@@ -25,3 +25,6 @@ $color-restaurants-new: darken($colour-tertiary, 36%);
 
 $color-footer: #353535;
 $color-footer-font: $color-background;
+
+/* Timing */
+$delay-spinner: 2s;
