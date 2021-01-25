@@ -41,7 +41,13 @@
 
 /* media queries */
 @mixin tablet-only {
-    @media all and (min-width: map-get($breakpoints, tablet)){
+    @media all and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
-  }
+}
+
+@mixin laptop-only {
+    @media all and (min-width: map-get($breakpoints, laptop)) {
+        @content;
+    }
+}
