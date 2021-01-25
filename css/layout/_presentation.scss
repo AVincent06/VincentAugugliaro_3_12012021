@@ -3,4 +3,8 @@
     height: 248px;
     padding: 39px 43px 0px 43px;
     text-align: center;
+
+    @include tablet-only {
+        height: 190px;
+    }
 }

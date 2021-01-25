@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="bloc-page">
-        <!-- **************************** BLOCK : HEADER **************************** -->
+        <!-- **************************** LOADING SPINNER **************************** -->
         <div class="loader">
             <div class="loading-spinner">
                 <img class="loading-spinner__circle" src="./images/loading_P3.svg" alt="loading">
@@ -31,7 +31,7 @@
             <button class="presentation__button" type="button">Explorer nos restaurants</button>
         </div>
 
-        <!-- **************************** BLOC : FUNCTIONING **************************** -->
+        <!-- **************************** BLOCK : FUNCTIONING **************************** -->
         <section class="functioning">
             <h2>Fonctionnement</h2>
             <div class="functioning__step">
@@ -57,12 +57,15 @@
             </div>
         </section>
 
-        <!-- **************************** BLOC : RESTAURANTS **************************** -->
+        <!-- **************************** BLOCK : RESTAURANTS **************************** -->
         <section class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants__card" onclick="location.href='la-palette-du-gout.html';">
                 <div class="restaurants__photo">
-                    <img src="./images/mobile/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    <picture>
+                        <source media="all and (min-width: 426px)" srcset="./images/tablet/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                        <img src="./images/mobile/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    </picture>
                 </div>
                 <div class="restaurants__rail">
                     <div class="restaurants__new">Nouveau</div>
@@ -80,7 +83,10 @@
             </div>
             <div class="restaurants__card" onclick="location.href='la-note-enchantee.html';">
                 <div class="restaurants__photo">
-                    <img src="./images/mobile/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    <picture>
+                        <source media="all and (min-width: 426px)" srcset="./images/tablet/stil-u2Lp8tXIcjw-unsplash.jpg">
+                        <img src="./images/mobile/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    </picture>
                 </div>
                 <div class="restaurants__rail">
                     <div class="restaurants__new">Nouveau</div>
@@ -98,7 +104,10 @@
             </div>
             <div class="restaurants__card" onclick="location.href='a-la-francaise.html';">
                 <div class="restaurants__photo">
-                    <img src="./images/mobile/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="&Agrave; la française">
+                    <picture>
+                        <source media="all and (min-width: 426px)" srcset="./images/tablet/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                        <img src="./images/mobile/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="&Agrave; la française">
+                    </picture>
                 </div>
                 <div class="restaurants__name">
                     <div>
@@ -113,7 +122,10 @@
             </div>
             <div class="restaurants__card" onclick="location.href='le-delice-des-sens.html';">
                 <div class="restaurants__photo">
-                    <img src="./images/mobile/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    <picture>
+                        <source media="all and (min-width: 426px)" srcset="./images/tablet/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                        <img src="./images/mobile/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                    </picture>
                 </div>
                 <div class="restaurants__name">
                     <div>
@@ -128,19 +140,25 @@
             </div>
         </section>
 
-        <!-- **************************** BLOC : FOOTER **************************** -->
+        <!-- **************************** BLOCK : FOOTER **************************** -->
         <footer>
-            <h2>ohmyfood</h2>
-            <div>
-                <img src="./images/utensils-solid.svg" alt="utensils" width="11" height="13" title="https://fontawesome.com/license">
-                <h3><a href="#">Proposer un restaurant</a></h3>
+            <h2 class="tablet__h2">ohmyfood</h2>
+            <div class="tablet__flex">
+                <div>
+                    <div class="flex">
+                        <img src="./images/utensils-solid.svg" alt="utensils" width="11px" height="13px" title="https://fontawesome.com/license">
+                        <h3><a href="#">Proposer un restaurant</a></h3>
+                    </div>
+                    <div class="flex">
+                        <img src="./images/hands-helping-solid.svg" alt="hands-helping" width="12px" height="13px" title="https://fontawesome.com/license">
+                        <h3><a href="#">Devenir partenaire</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Mentions légales</a></h3>
+                    <h3><a href="mailto:contact@ohmyfood.fr">Contact</a></h3>
+                </div>
             </div>
-            <div>
-                <img src="./images/hands-helping-solid.svg" alt="hands-helping" width="12" height="13" title="https://fontawesome.com/license">
-                <h3><a href="#">Devenir partenaire</a></h3>
-            </div>
-            <h3><a href="#">Mentions légales</a></h3>
-            <h3><a href="mailto:contact@ohmyfood.fr">Contact</a></h3>
         </footer>
     </div>
 </body>

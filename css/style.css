@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /* Colors */
+/* Layout */
 /* Timing */
+/* Map */
 /* Les fonctions */
+/* media queries */
 /* à effacer */
 /* @import "./vendors/"; */
 /* les fondations, les normes */
@@ -59,6 +62,11 @@ h3 {
 }
 .logo p {
   margin: 0px;
+}
+@media all and (min-width: 426px) {
+  .logo {
+    font-size: 3em;
+  }
 }
 
 .presentation__button {
@@ -135,10 +143,17 @@ h3 {
 }
 
 .heart {
-  height: 22PX;
+  height: 22px;
   margin: 6px 25px 0px 0px;
   position: relative;
   width: 22px;
+}
+@media all and (min-width: 426px) {
+  .heart {
+    height: 30px;
+    margin: 10px 25px 0px 0px;
+    width: 30px;
+  }
 }
 .heart:hover > .heart__color {
   opacity: 1;
@@ -168,6 +183,11 @@ h3 {
   transition: all 400ms ease-in-out;
   z-index: 1;
 }
+@media all and (min-width: 426px) {
+  .heart__color {
+    font-size: 30px;
+  }
+}
 .heart__outline {
   font-size: 22px;
   position: absolute;
@@ -175,6 +195,11 @@ h3 {
   -webkit-transition: all 50ms 350ms;
   transition: all 50ms 350ms;
   z-index: 0;
+}
+@media all and (min-width: 426px) {
+  .heart__outline {
+    font-size: 30px;
+  }
 }
 
 .banner {
@@ -233,6 +258,11 @@ h3 {
   font-weight: 400;
   margin: 0;
 }
+@media all and (min-width: 426px) {
+  .cover__title h1 {
+    font-size: 2.5em;
+  }
+}
 .cover__title .my-heart {
   margin: 6px 0px 0px 0px;
 }
@@ -243,24 +273,44 @@ footer {
   height: 172px;
   padding: 25px 0px 0px 25px;
 }
+@media all and (min-width: 426px) {
+  footer {
+    padding: 25px 0px 0px 0px;
+  }
+}
 footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.1em;
   font-weight: 400;
   margin-bottom: 16px;
 }
+@media all and (min-width: 426px) {
+  footer h2 {
+    font-size: 1.6em;
+  }
+}
 footer h3 {
   font-size: 1em;
   font-weight: 400;
   margin-bottom: 7px;
 }
-footer div {
+@media all and (min-width: 426px) {
+  footer h3 {
+    font-size: 1.2em;
+  }
+}
+footer div.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 footer img {
   margin: 2px 11px 0px 0px;
+}
+@media all and (min-width: 426px) {
+  footer img {
+    margin: 4px 11px 0px 0px;
+  }
 }
 footer a {
   color: white;
@@ -270,12 +320,35 @@ footer a {
 footer a:visited {
   color: white;
 }
+@media all and (min-width: 426px) {
+  footer .tablet__h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.6em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .tablet__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 
 /* les formulaires */
 .functioning {
   background-color: white;
   height: 440px;
   padding: 46px 20px 0px 32px;
+}
+@media all and (min-width: 426px) {
+  .functioning {
+    padding: 46px 40px 0px 52px;
+  }
 }
 .functioning h2 {
   margin-bottom: 24px;
@@ -339,8 +412,12 @@ footer a:visited {
   margin: 0px;
   position: relative;
 }
+@media all and (min-width: 426px) {
+  .functioning__step h3 {
+    font-size: 1.2em;
+  }
+}
 
-/* temporaire */
 .coloured {
   background-color: #f5edff;
 }
@@ -364,6 +441,19 @@ header a {
   left: 6%;
   position: absolute;
 }
+header img {
+  height: 18px;
+}
+@media all and (min-width: 426px) {
+  header img {
+    height: 27px;
+  }
+}
+@media all and (min-width: 426px) {
+  header {
+    height: 95px;
+  }
+}
 
 /* Le nav */
 .order {
@@ -377,6 +467,11 @@ header a {
   padding: 39px 43px 0px 43px;
   text-align: center;
 }
+@media all and (min-width: 426px) {
+  .presentation {
+    height: 190px;
+  }
+}
 
 .recipes {
   background-color: #f6f6f6;
@@ -384,6 +479,11 @@ header a {
   padding: 0px 14px 0px 14px;
   position: relative;
   top: -8px;
+}
+@media all and (min-width: 426px) {
+  .recipes {
+    padding: 0px 40px 0px 40px;
+  }
 }
 .recipes h2 {
   font-size: 1em;
@@ -590,6 +690,11 @@ header a {
   background-color: #f6f6f6;
   height: 1226px;
   padding: 53px 20px 0px 20px;
+}
+@media all and (min-width: 426px) {
+  .restaurants {
+    padding: 53px 40px 0px 40px;
+  }
 }
 .restaurants h2 {
   margin-bottom: 27px;

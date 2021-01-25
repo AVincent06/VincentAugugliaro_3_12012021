@@ -38,3 +38,10 @@
         z-index: -1;
     }
 }
+
+/* media queries */
+@mixin tablet-only {
+    @media all and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+  }

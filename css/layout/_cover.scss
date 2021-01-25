@@ -22,6 +22,10 @@
             font-size: 1.75em;
             font-weight: 400;
             margin: 0;
+
+            @include tablet-only {
+                font-size: 2.5em;
+            }
         }
         & .my-heart {
             margin: 6px 0px 0px 0px;

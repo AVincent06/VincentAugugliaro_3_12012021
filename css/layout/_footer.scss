@@ -3,22 +3,39 @@ footer {
     color: $color-footer-font;
     height: 172px;
     padding: 25px 0px 0px 25px;
+
+    @include tablet-only {
+        padding: 25px 0px 0px 0px;
+    }
+
     & h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.1em;
         font-weight: 400;
         margin-bottom: 16px;
+
+        @include tablet-only {
+            font-size: 1.6em;
+        }
     }
     & h3 {
         font-size: 1em;
         font-weight: 400;
         margin-bottom: 7px;
+
+        @include tablet-only {
+            font-size: 1.2em;
+        }
     }
-    & div {
+    & div.flex {
         display: flex;
     }
     & img {
         margin: 2px 11px 0px 0px;
+
+        @include tablet-only {
+            margin: 4px 11px 0px 0px;
+        }
     }
     & a {
         color: $color-footer-font;
@@ -26,6 +43,20 @@ footer {
         text-decoration:none;
         &:visited {
             color: $color-footer-font;
+        }
+    }
+
+    @include tablet-only {
+        .tablet {
+            &__h2 {
+                display: flex;
+                font-size: 1.6em;
+                justify-content: center;
+            }
+            &__flex {
+                display: flex;
+                justify-content: space-around;
+            }
         }
     }
 }

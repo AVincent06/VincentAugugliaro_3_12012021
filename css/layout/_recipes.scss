@@ -4,6 +4,11 @@
     padding: 0px 14px 0px 14px;
     position: relative;
     top: -8px;
+
+    @include tablet-only {
+        padding: 0px $Layout-padding*2 0px $Layout-padding*2;
+    }
+
     & h2 {
         font-size: 1em;
         font-weight: 400;

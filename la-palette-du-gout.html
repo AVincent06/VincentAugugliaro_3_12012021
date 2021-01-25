@@ -12,12 +12,15 @@
         <!-- **************************** BLOCK : HEADER **************************** -->
         <header>
             <div class="logo"><p>ohmyfood</p></div>
-            <a href="index.html"><img src="./images/arrow-left-solid.svg" alt="back" height="18" title="https://fontawesome.com/license"></a>
+            <a href="index.html"><img src="./images/arrow-left-solid.svg" alt="back" title="https://fontawesome.com/license"></a>
         </header>
 
         <div class="cover">
             <div class="cover__photo">
-                <img src="./images/mobile/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                <picture>
+                    <source media="all and (min-width: 426px)" srcset="./images/tablet/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <img src="./images/mobile/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                </picture>
             </div>
             <div class="cover__title">
                 <h1>La palette du goût</h1>
@@ -160,17 +163,23 @@
 
         <!-- **************************** BLOCK : FOOTER **************************** -->
         <footer>
-            <h2>ohmyfood</h2>
-            <div>
-                <img src="./images/utensils-solid.svg" alt="utensils" width="11" height="13" title="https://fontawesome.com/license">
-                <h3><a href="#">Proposer un restaurant</a></h3>
+            <h2 class="tablet__h2">ohmyfood</h2>
+            <div class="tablet__flex">
+                <div>
+                    <div class="flex">
+                        <img src="./images/utensils-solid.svg" alt="utensils" width="11px" height="13px" title="https://fontawesome.com/license">
+                        <h3><a href="#">Proposer un restaurant</a></h3>
+                    </div>
+                    <div class="flex">
+                        <img src="./images/hands-helping-solid.svg" alt="hands-helping" width="12px" height="13px" title="https://fontawesome.com/license">
+                        <h3><a href="#">Devenir partenaire</a></h3>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Mentions légales</a></h3>
+                    <h3><a href="mailto:contact@ohmyfood.fr">Contact</a></h3>
+                </div>
             </div>
-            <div>
-                <img src="./images/hands-helping-solid.svg" alt="hands-helping" width="12" height="13" title="https://fontawesome.com/license">
-                <h3><a href="#">Devenir partenaire</a></h3>
-            </div>
-            <h3><a href="#">Mentions légales</a></h3>
-            <h3><a href="mailto:contact@ohmyfood.fr">Contact</a></h3>
         </footer>
     </div>
 </body>

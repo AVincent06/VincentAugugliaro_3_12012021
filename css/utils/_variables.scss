@@ -26,5 +26,16 @@ $color-restaurants-new: darken($colour-tertiary, 36%);
 $color-footer: #353535;
 $color-footer-font: $color-background;
 
+/* Layout */
+$layout-heart: 22px;
+$Layout-padding: 20px;
+
 /* Timing */
 $delay-spinner: 2s;
+
+/* Map */
+$breakpoints: (
+  tablet: 426px,
+  laptop: 1024px, // à corriger
+  laptop-l: 1440px // à corriger
+);
