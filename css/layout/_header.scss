@@ -5,9 +5,21 @@ header {
     height: 63px;
     justify-content: center;
     position: relative;
+
     & a {
         display: block;
         left: 6%;
         position: absolute;
+    }
+
+    & img {
+        height: 18px;
+        @include tablet-only {
+            height: 27px;
+        }
+    }
+
+    @include tablet-only {
+        height: 95px;
     }
 }

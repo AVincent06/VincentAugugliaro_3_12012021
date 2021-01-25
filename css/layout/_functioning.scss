@@ -1,10 +1,16 @@
 .functioning {
     background-color: $color-functioning;
     height: 440px;
-    padding: 46px 20px 0px 32px;
+    padding: 46px $Layout-padding 0px ($Layout-padding + 12px);
+
+    @include tablet-only {
+        padding: 46px $Layout-padding*2 0px ($Layout-padding*2 + 12px);
+    }
+
     & h2 {
         margin-bottom: 24px;
     }
+
     &__icons {
         align-items: center;
         display: flex;
@@ -14,6 +20,7 @@
         top: 24px;
         width: 20%;
     }
+
     &__number {
         @include center;
         background-color: $colour-primary;
@@ -23,6 +30,7 @@
         height: 24px;
         width: 24px;
     }
+
     &__step {
         @include center;
         background-color: $color-functioning-step;
@@ -31,19 +39,24 @@
         height: 73px;
         margin-bottom: 25px;
         position: relative;
+
         &--coloured {
             background-color: $color-functioning-step-coloured;
         }
+
         & h3 {
             font-size: 1em;
             font-weight: 500;
             margin: 0px;
             position: relative;
-        }    
+
+            @include tablet-only {
+                font-size: 1.2em;
+            }
+        }
     }
 }
 
-/* temporaire */
 .coloured {
     background-color: $color-functioning-step-coloured;
 }
