@@ -9,6 +9,11 @@
         padding: 0px $Layout-padding*2 0px $Layout-padding*2;
     }
 
+     @include laptop-l-only {
+        padding: 0px 0px 0px 0px;
+        width: 340px;
+    }
+
     & h2 {
         font-size: 1em;
         font-weight: 400;

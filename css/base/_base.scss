@@ -3,6 +3,13 @@
 .bloc-page {
     margin:unset;
     width: auto;
+
+    @include desktop-only {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        margin:auto;
+        width: 1440px;
+    }
 }
 
 body {

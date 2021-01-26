@@ -28,6 +28,7 @@ $color-footer-font: $color-background;
 
 /* Layout */
 $layout-heart: 22px;
+$layout-loading-spinner : 100px;
 $Layout-padding: 20px;
 
 /* Timing */
@@ -37,5 +38,6 @@ $delay-spinner: 2s;
 $breakpoints: (
   tablet: 426px,
   laptop: 769px,
-  laptop-l: 1440px // à corriger
+  laptop-l: 1025px,
+  desktop: 1441px
 );

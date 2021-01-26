@@ -7,8 +7,17 @@
         padding: 46px $Layout-padding*2 0px ($Layout-padding*2 + 12px);
     }
 
+    @include laptop-l-only {
+        height: auto;
+        padding: 0px 0px 0px 0px;
+        width: 500px;
+    }
+
     & h2 {
         margin-bottom: 24px;
+        @include laptop-l-only {
+            text-align: center;
+        }
     }
 
     &__icons {

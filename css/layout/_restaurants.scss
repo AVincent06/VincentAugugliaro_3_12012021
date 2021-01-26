@@ -7,8 +7,16 @@
         padding: 53px $Layout-padding*2 0px $Layout-padding*2;
     }
 
+    @include laptop-l-only {
+        height: auto;
+        padding: 53px 0px 0px 0px;
+    }
+
     & h2 {
         margin-bottom: 27px;
+        @include laptop-l-only {
+            text-align: center;
+        }
     }
 
     &__card {
@@ -17,6 +25,10 @@
         cursor: pointer;
         margin-bottom: 18px;
         position: relative;
+
+        @include laptop-l-only {
+            width: 500px;
+        }
     }
 
     &__photo {

@@ -51,3 +51,15 @@
         @content;
     }
 }
+
+@mixin laptop-l-only {
+    @media all and (min-width: map-get($breakpoints, laptop-l)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

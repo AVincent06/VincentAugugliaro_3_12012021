@@ -27,8 +27,11 @@
         animation-name: pace;
         animation-timing-function: linear;
         position: absolute;
-        width: 100px;
+        width: $layout-loading-spinner;
         z-index: 2;
+        @include laptop-l-only {
+            width: $layout-loading-spinner * 1.5;
+        }
     }
     
     &__circle {
@@ -37,8 +40,11 @@
         animation-name: revolution;
         animation-timing-function: linear;
         position:absolute;
-        width: 200px;
+        width: ($layout-loading-spinner*2);
         z-index: 1;
+        @include laptop-l-only {
+            width: ($layout-loading-spinner*2) * 1.5;
+        }
     }
 }
 

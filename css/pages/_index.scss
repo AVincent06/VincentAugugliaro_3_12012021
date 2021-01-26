@@ -1,0 +1,21 @@
+@include laptop-l-only {
+    .index-laptop-l {
+        display: flex;
+        height: 401px;
+        justify-content: space-around;
+        padding-top: 39px;
+
+        &__presentation {
+            align-items: center;
+            display: flex;
+            margin-bottom: 68px;
+        }
+
+        &__restaurants {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 100px;
+        }
+    }
+}

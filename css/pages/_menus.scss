@@ -1,3 +1,10 @@
 .body-menu {
     background-color: $color-background-menu;
 }
+
+@include laptop-l-only {
+    .menus-laptop-l{
+        display: flex;
+        justify-content: space-around;
+    }
+}
