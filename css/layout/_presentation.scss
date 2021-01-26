@@ -7,4 +7,11 @@
     @include tablet-only {
         height: 190px;
     }
+
+    @include laptop-l-only {
+        background-color: $color-background;
+        height: auto;
+        padding: 0px 0px 0px 0px;
+        width: 500px;
+    }
 }
