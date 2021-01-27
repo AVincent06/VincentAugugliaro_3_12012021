@@ -1,13 +1,9 @@
-@charset "UTF-8";
 /* Colors */
 /* Layout */
 /* Timing */
 /* Map */
-/* Les fonctions */
 /* media queries */
-/* à effacer */
 /* @import "./vendors/"; */
-/* les fondations, les normes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 .bloc-page {
   margin: unset;
@@ -235,7 +231,6 @@ h3 {
   margin-left: 1em;
 }
 
-/* les conteneurs */
 .cover__photo {
   height: 258px;
   overflow: hidden;
@@ -347,7 +342,6 @@ footer a:visited {
   }
 }
 
-/* les formulaires */
 .functioning {
   background-color: white;
   height: 440px;
@@ -475,7 +469,6 @@ header img {
   }
 }
 
-/* Le nav */
 .order {
   margin-bottom: 58px;
   text-align: center;

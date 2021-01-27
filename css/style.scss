@@ -1,7 +1,5 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 
 /* @import "./vendors/"; */
 
@@ -12,13 +10,10 @@
 @import "./components/heart";
 
 @import "./layout/banner";
-@import "./layout/container";
 @import "./layout/cover";
 @import "./layout/footer";
-@import "./layout/form";
 @import "./layout/functioning";
 @import "./layout/header";
-@import "./layout/nav";
 @import "./layout/order";
 @import "./layout/presentation";
 @import "./layout/recipes";
